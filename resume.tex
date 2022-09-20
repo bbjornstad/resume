@@ -1,0 +1,219 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage{xpatch}
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}                
+% for the 'classic' style, if you want to force the width allocated to your name
+% and avoid line breaks. be careful though, the length is normally calculated to
+% avoid any overlap with your personal info; use this at your own typographical
+% risks...
+%\setlength{\makecvtitlenamewidth}{10cm}           
+
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+\moderncvicons{awesome}
+
+% personal data
+\name{Bailey}{Bjornstad}
+\title{Data Engineer and Analyst at unumAI}
+% optional; the "postcode city" and "country" arguments can be omitted or
+% provided empty
+\address{444 East 19th Avenue Apt C405}{Denver, CO 80203}
+% optional; the optional "type" of the phone can be "mobile" (default), "fixed"
+% or "fax"
+\phone[mobile]{+1~(760)~419~9148}
+% optional
+\email{baileybjornstad@gmail.com}
+\social[linkedin]{bailey-bjornstad}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Ezoic Recruitment}{Ezoic\\6023 Innovation Way\\Carlsbad, CA 92009}
+\date{\today}
+\opening{Dear Hiring Manager:}
+\closing{Sincerely,}
+% use an optional argument to use a string other than "Enclosure", or redefine
+% \enclname
+\makelettertitle
+
+
+
+\makeletterclosing
+
+\clearpage
+
+% remove periods at the end of lines.
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\subsection{Data Engineering and Analysis}
+\cventry{2020--2022}{Data Engineer and Analyst}{unumAI}{Denver, CO}{}{
+    Developed company data management software from mathematical specifications
+    with focus on collection and processing of Google Trends Search data for
+    political prediction and issue analysis research.
+\begin{itemize}
+    \item   Led company technical development through implementation of most
+        company methodologies using Python, SQL, and Azure to facilitate easy
+        collection, transformation, storage, and PowerBI presentation of Google
+        Trends search data.
+    \item   Used asynchronous request tooling in tandem with Azure Function
+        Applications to increase data collection speeds by orders of magnitude
+        at very low cost.
+    \item   Integrated Azure tooling for company data maintenance to provide a
+        foundational and extensible software platform for data integration that
+        is accessible to those not necessarily familiar with programming methods
+        or languages.
+    \item   Wrote complex DAX code to tackle interactive visual measurement and
+        display of Google Trends Search data across all client contexts.
+    \item   Assisted company clients during product and project pitch
+        presentations by clarifying technical aspects of estimation and
+        analysis, or with outright presentation of material to prospective
+        client teams.
+    \item   Exhibited a strong ability to think quickly and understand new
+        domain specific knowledge across fields as applied to a specific
+        question or technical problem.
+    \item Demonstrated self-sufficiency in a remote environment, managing
+        expectations and workload on a team of only two people in a fast paced
+        environment and with many responsibilities.
+\end{itemize}}
+\cventry{2019--2020}{Data Management and Analytics Specialist}{Bright Event
+Rentals}{San Diego, CA}{}{Assisted company analytics endeavors through
+CyberQuery programming on database of transactions, rental equipment, and
+customers
+\begin{itemize}
+    \item   Wrote customized and automated database queries using CyberQuery to
+        improve rental business analytics and reporting
+    \item   Facilitated major revenue generation by using historical data to
+        optimize sales of equipment rental protection policies
+    \item   Classified customers in terms of business strategy goals using data
+        to identify inconsistencies between company locations
+\end{itemize}}
+\subsection{Mathematics}
+\cventry{2017--2019}{Teaching Assistant}{Northwestern University}{Evanston,
+IL}{}{Assisted professors of six multivariable and single-variable undergraduate
+calculus classes by running discussion sections and working one-on-one with
+students.}
+\cventry{2017--2018}{Peer Tutor}{Northwestern University}{Evanston,
+IL}{}{Assisted fellow undergraduates of Northwestern University with a variety
+of math courses in a weekly, drop-in setting.}
+\cventry{Summer 2017}{Independent Research in Math}{Northwestern
+    University}{Evanston, IL}{}{Developed a concept of \emph{mathematical
+        fragility} in birth and death stochastic processes.
+\begin{itemize}
+    \item   Used \texttt{Python} and accompanying analytical tools to develop a
+        preliminary model through simulation of birth and death stochastic
+        processes.
+    \item   Mathematically analyzed examples to verify properties of these
+        preliminary models.
+    \item   Abstractly developed these preliminary models using mathematical
+        tools from probability to draw out quantities that describe the
+        fragility of a process.
+\end{itemize}}
+\cventry{Fall 2016}{Research Assistant}{Northwestern University}{Evanston,
+IL}{}{Aided research on inquiry-based approaches to math education by recording
+classes and documenting student interactions in a novel classroom setting.}
+% \subsection{Miscellaneous}
+% \cventry{Summer 2016}{Research Assistant}{University of California San
+% Diego}{San Diego, CA}{}{Developed a reusable analysis pipeline for single-cell
+%     RNA sequencing data used in research on middle-ear infections.
+% \begin{itemize}
+%     \item   Worked with the \texttt{R} programming language to analyze data sets
+%         for intuitive groupings.
+%     \item   Wrote a series of scripts designed to process and analyze data sets
+%         to look for differences in groupings.
+%     \item   Created visualizations of data in order to better understand the
+%         differences between these groups.
+% \end{itemize}}
+\clearpage
+
+\section{Education}
+\cventry{2015--Present}{Mathematics}{Northwestern University}{Evanston, IL}{GPA:
+$3.7/4.0$}{Undergraduate major in Math with emphasis on advanced classes where
+    possible.\newline Relevant Courses:
+\begin{itemize}
+    \item   \emph{ISP Math} --- A three quarter intensive course covering
+        multivariable calculus, ordinary differential equations, and linear
+        algebra.
+    \item	  \emph{Foundations of Higher Math} --- A single quarter course on the
+        standards of mathematical proof.
+    \item	  \emph{MENU Real Analysis} --- A three quarter intensive course that
+        rigorously develops calculus, including measure theory.
+    \item	  \emph{MENU Abstract Algebra \& Abstract Algebra} --- Two quarters of
+        an intensive course devoted to the study of groups and rings, followed
+        by a one quarter course on Galois Theory.
+    \item   \emph{Other Computer Science \& Applied Math} --- Various computer
+        science and applied math courses covering topics including data
+        structures, \texttt{Python} implementations of fundamental algorithms
+        from machine learning, and computational neuronal modeling.
+\end{itemize}}
+\cventry{}{Music Technology}{Northwestern University}{Evanston,
+IL}{}{Undergraduate minor in Music Technology, with coursework focused on
+synthesis and analysis of electronic music. In a degree project, co-designed and
+prototyped a laser harp digital music interface.}
+\cventry{2011--2015}{High School Diploma}{Pacific Ridge School}{Carlsbad,
+CA}{GPA: $4.0/4.0$}{Relevant Achievements:
+\begin{itemize}
+    \item   \emph{Captain of Robotics Team} --- Led a team of peers to multiple podium finishes in First
+        Tech Challenge robotics competitions.
+    \item   \emph{Theatrical Technical Director} --- Organized and produced the technical side of yearly
+        musicals and plays, particularly with regards to audio.
+\end{itemize}}
+
+\section{Awards}
+\cventry{May 2016}{Excellence in Mathematics by a First-Year
+Student}{Northwestern University}{Evanston, IL}{}{Award given to students who
+display strong achievement in a number of advanced mathematics courses offered
+at Northwestern University.}
+\cventry{May 2019}{Certificate of Recognition for Service as an Undergraduate
+Teaching Assistant}{Northwestern University}{Evanston, IL}{}{A certificate given
+to senior teaching assistants who dedicated their distinguished skills by
+continually serving Northwestern's math department.}
+
+\section{Computer Skills}
+\cvitemwithcomment{Programming}{\texttt{Python, SQL, R}}{Expert}
+\cvitemwithcomment{Cloud Services}{Azure}{Proficient}
+\cvitemwithcomment{Statistics}{\texttt{Numpy, Pandas}}{Expert}
+\cvitemwithcomment{BI/Visualization}{Microsoft Power BI,
+\texttt{Matplotlib}}{Expert}
+\cvitemwithcomment{Typesetting}{{\fontfamily{cmr}\selectfont \LaTeX}}{Expert}
+\cvitem{Linux}{Built and maintain a customized installation of Arch Linux as my
+daily operating system. Familiar with many other distributions as well.}
+
+\section{Hobbies and Interests}
+\cvitem{Radio DJ}{Host of \textit{Non-Euclidean Space}, \textit{Excitotoxicity},
+and \textit{Late Night Geometries} on WNUR 89.3 FM, with focus on electronic
+music of different geometries.}
+\cvitem{MTG}{Have played the trading card game \textit{Magic: The Gathering} at
+a competitive level.}
+\cvitem{Cooking}{In the kitchen, a devotee of \emph{Good Eats}'s Alton Brown and
+publications \emph{Serious Eats} and \emph{Cook's Illustrated}.}
+
+\clearpage
+
+\section{References}
+\cvitem{Skylar White}{\emph{unumAI}\newline
+CEO/Founder\newline
+jskylarwhite@gmail.com\newline
+Director and Supervisor at unumAI}
+\cvitem{Lauren Beaver}{\emph{KPMG}\newline
+Azure Integrations Specialist\newline
+laurenbeaver5656@gmail.com\newline
+Advisor at unumAI on Azure Integration}
+\cvitem{Dr. Nick Webster}{\emph{University of California San Diego}\newline
+Professor of Medicine\newline
+nwebster@ucsd.edu\newline
+Advisor on RNA Sequencing Research Project}
+
+\end{document}
